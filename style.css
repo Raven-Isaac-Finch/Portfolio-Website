@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    /* border: 1px solid white; */
+}
+
+.honey-text {
+    color: rgb(153, 130,53);
+}
+
+header {
+    background-image: linear-gradient(rgb(253, 197, 123), white);
+    border-bottom: 3px solid rgb(17, 37, 50);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.73);
+}
+
+#nav-bar ul li {
+    margin: 15px 20px;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+#nav-bar ul li a {
+    font-weight: 800;
+}
+
+
+body {
+    background-image: url(/images/v748-toon-61.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+
+#main-title {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#name-title {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
