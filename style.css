@@ -34,7 +34,10 @@ header {
 }
 
 #nav-bar ul li a:hover {
+    transition: all 0.2s ease-in-out;
     color:rgb(17, 37, 50);
+    border-radius: 5px;
+    border-bottom: 5px solid rgb(153, 130,53);
 }
 
 body {
@@ -81,15 +84,14 @@ body {
 
 main > *:hover ~ #hidden-job {
     opacity: 1;
-    transition: 0.2s;
-
+    transition: 0.3s;
 }
 
 #hidden-job {
     opacity: 0;
     padding: 5px;
     border-bottom: 2px solid rgb(153, 130,53);
-    transition-delay: 5s;
+    transition: 0.3s;
 }
 
 footer {
@@ -231,6 +233,7 @@ footer {
 .project-items h6 ~ p {
     color: white;
     align-self: flex-start;
+    padding: 1rem;
 }
 
 .hidden-menu a {
@@ -238,30 +241,65 @@ footer {
 }
 
 #contact-main {
-    width: 30%;
-    margin: 10rem auto;
+    max-width: 80%;
+    min-width: 40%;
+    margin: 14rem auto;
     display: grid;
-    grid-row: 1fr;
-    grid-column: 1fr;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact-container {
-    display: grid;
-    grid-row: 1fr;
+    grid-row: 1fr 1fr;
     grid-column: 1fr 1fr 1fr;
     justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    color: rgb(17, 37, 50);
+}
+
+#contact-main h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom: 5px solid rgb(17, 37, 50);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact-main h2:hover {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 5px solid rgb(153, 130,53);
+}
+
+.contact-details {
+    padding: 1rem 2rem;
+    font-weight: 400;
+}
+
+.contact-details i {
+    padding-bottom: 0.3rem;
 }
 
 #first-contact {
-    grid-column-start: 1;
+    grid-column-start: 1;   
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 #second-contact {
     grid-column-start: 2;
+    border-radius: 10px;
 }
 
 #third-contact {
     grid-column-start: 3;
+    border-radius: 10px;
+}
+
+#first-contact:hover,
+#second-contact:hover,
+#third-contact:hover {
+    background-color: rgb(153, 130,53);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 2px 10px 4px rgba(0,0,0,0.3);
+    color: white;
 }
