@@ -5,88 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+    <link rel="icon" href="/images/RIFsite.ico">
     <script src="https://kit.fontawesome.com/651fa61eb5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <header>
-    <div>
+    <div id="nav-bar">
         <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="aboutme.html">ABOUT ME</a></li>
-            <li><a href="myprojects.html">MY PROJECTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="home.html" class="honey-text">HOME</a></li>
+            <li><a href="aboutme.html" class="honey-text">ABOUT ME</a></li>
+            <li><a href="myprojects.html" class="honey-text">MY PROJECTS</a></li>
+            <li><a href="contact.html" class="honey-text">CONTACT</a></li>
         </ul>
     </div>
 </header>
 <body>
-    <div>
-        <h2>My Projects</h2>
-        <h6>Since 2022</h6>
-    </div>
-    <div>
-        <div>
-            <img src="/images/project-one.png" alt="PROJECT-1">
-            <div>
-                <h4>Project Name</h4>
-                <h6>Project Language</h6>
-                <p>Project Explanation</p>
-                <a href="#"><i class="fa-brands fa-github">View Project</i></a>
+    <main id="projects-main">
+        <div id="project-head">
+            <h2>My Projects</h2>
+            <h6>Since 2022</h6>
+        </div>
+        <div class="project-items">
+            <img src="/images/project-one.png" class="project-img" alt="PROJECT-1">
+            <div class="hidden-menu">
+                <h4>Calculator</h4>
+                <h6>Python</h6>
+                <p>Can Smoothly Run 4 Core Operations</p>
+                <a href="#!"><i class="fa-brands fa-github">View Project</i></a>
             </div>
         </div>
-        <div>
-            <img src="/images/project-two.png" alt="PROJECT-2">
-            <div>
-                <h4>Project Name</h4>
-                <h6>Project Language</h6>
-                <p>Project Explanation</p>
-                <a href="#"><i class="fa-brands fa-github">View Project</i></a>
+        <div class="project-items">
+            <img src="/images/project-two.png" class="project-img" alt="PROJECT-2">
+            <div class="hidden-menu">
+                <h4>Microkiller 1.0</h4>
+                <h6>Python</h6>
+                <p>Able to Store Customer Data and Returns Order Details As An Invoice</p>
+                <a href="#!"><i class="fa-brands fa-github">View Project</i></a>
             </div>
         </div>
-        <div>
-            <img src="/images/project-three.png" alt="PROJECT-3">
-            <div>
-                <h4>Project Name</h4>
-                <h6>Project Language</h6>
-                <p>Project Explanation</p>
-                <a href="#"><i class="fa-brands fa-github">View Project</i></a>
+        <div class="project-items">
+            <img src="/images/project-three.png" class="project-img" alt="PROJECT-3">
+            <div class="hidden-menu">
+                <h4>Snake Game</h4>
+                <h6>Python</h6>
+                <p>The Nostalgic Snake Game</p>
+                <a href="#!"><i class="fa-brands fa-github">View Project</i></a>
             </div>
         </div>
-        <div>
-            <img src="/images/project-four.jpg" alt="PROJECT-4">
-            <div>
-                <h4>Project Name</h4>
-                <h6>Project Language</h6>
-                <p>Project Explanation</p>
-                <a href="#"><i class="fa-brands fa-github">View Project</i></a>
+        <div class="project-items">
+            <img src="/images/project-four.jpg" class="project-img" alt="PROJECT-4">
+            <div class="hidden-menu">
+                <h4>Facebook</h4>
+                <h6>HTML/CSS</h6>
+                <p>FB Landing Page Clone For Practice</p>
+                <a href="#!"><i class="fa-brands fa-github">View Project</i></a>
             </div>
         </div>
-        <div>
-            <img src="/images/project-five.png" alt="PROJECT-5">
-            <div>
-                <h4>Project Name</h4>
-                <h6>Project Language</h6>
-                <p>Project Explanation</p>
-                <a href="#"><i class="fa-brands fa-github">View Project</i></a>
+        <div class="project-items">
+            <img src="/images/project-five.png" class="project-img" alt="PROJECT-5">
+            <div class="hidden-menu">
+                <h4>Clarusway</h4>
+                <h6>HTML/CSS/Bootstrap</h6>
+                <p>Clarusway Landing Page For Bootstrap Practice</p>
+                <a href="#!"><i class="fa-brands fa-github">View Project</i></a>
             </div>
         </div>
-        <div>
-            <img src="/images/project-six.jpg" alt="PROJECT-6">
-            <div>
-                <h4>Project Name</h4>
-                <h6>Project Language</h6>
-                <p>Project Explanation</p>
-                <a href="#"><i class="fa-brands fa-github">View Project</i></a>
+        <div class="project-items">
+            <img src="/images/project-six.jpg" class="project-img" alt="PROJECT-6">
+            <div class="hidden-menu">
+                <h4>ToDo Page</h4>
+                <h6>HTML/CSS/JS</h6>
+                <p>Basic To-Do List For JS Practice</p>
+                <a href="#!"><i class="fa-brands fa-github">View Project</i></a>
             </div>
         </div>
-    </div>
+        
+    </main>
 </body>
 <footer>
-    <div>
+    <div id="icon-container">
         <a href="#!"><i class="fa-brands fa-github"></i></a>
         <a href="#!"><i class="fa-solid fa-envelope"></i></a>
         <a href="#!"><i class="fa-brands fa-linkedin"></i></a>
     </div>
-    <div>
-        <p>&copy Copyright 2021</p>
-    </div>
+    <p id="copyright" class="honey-text">&copy Copyright 2021</p>
 </footer>
 </html>

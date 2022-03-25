@@ -9,6 +9,7 @@
 
 .honey-text {
     color: rgb(153, 130,53);
+    font-weight: 800;
 }
 
 header {
@@ -32,10 +33,9 @@ header {
     border-radius: 10px;
 }
 
-#nav-bar ul li a {
-    font-weight: 800;
+#nav-bar ul li a:hover {
+    color:rgb(17, 37, 50);
 }
-
 
 body {
     background-image: url(/images/v748-toon-61.jpg);
@@ -43,11 +43,11 @@ body {
     background-repeat: no-repeat;
 }
 
-main {
+#home-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin: 12rem 0;
     flex-wrap: wrap;
 }
 
@@ -56,10 +56,212 @@ main {
     margin: auto;
     text-align: center;
     font-size: 2rem;
+    color: rgb(17, 37, 50);
 }
 
 #name-title {
     text-align: center;
     width: 100%;
     margin: auto;
+    border-bottom: 2px solid rgb(17, 37, 50);
+    font-size: 5rem;
+}
+
+#title-name {
+    font-size: 1rem;
+    color: rgb(17, 37, 50);
+}
+
+#job-title {
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(17, 37, 50);
+    padding: 5px;
+}
+
+main > *:hover ~ #hidden-job {
+    opacity: 1;
+    transition: 0.2s;
+
+}
+
+#hidden-job {
+    opacity: 0;
+    padding: 5px;
+    border-bottom: 2px solid rgb(153, 130,53);
+    transition-delay: 5s;
+}
+
+footer {
+    height: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+#icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#icon-container a {
+    color: rgb(17, 37, 50);
+    font-size: 2rem;
+}
+
+#icon-container a:hover {
+    color: rgb(153, 130,53);
+}
+
+#copyright {
+    color: rgb(17, 37, 50);
+    font-size: 0.7rem;
+    align-self: flex-end;
+    padding: 1rem;
+}
+
+#about-main {
+    width: 80%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    gap: 15px;
+}
+
+#about-container,
+#project-head {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color:rgb(17, 37, 50);
+    border-bottom: 5px solid rgb(17, 37, 50);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.exp-container {
+    background-color: rgb(17, 37, 50);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 4px rgba(0,0,0,0.3);
+}
+
+#about-container h2,
+.exp-container h2, h6 {
+    color: rgb(153, 130,53);
+    padding-bottom: 10px;
+}
+
+.exp-container h4, h6 ~ p {
+    color: white;
+}
+
+#projects-main {
+    width: 80%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    gap: 15px;
+}
+
+.project-img {
+    top: 0;
+    width: 25vw;
+    height: 20vw;
+}
+
+#project-head {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-items {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr;
+}
+
+.project-items:hover .hidden-menu {
+    opacity: 0.9;
+    background: rgb(153, 130,53);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-items:hover .project-img{
+    opacity: 0.5;
+    z-index: -2;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hidden-menu {
+    position: absolute;
+    width: 25vw;
+    height: 20vw;
+    margin-left: 4px;
+    opacity: 0;
+    z-index: -1;
+    display: grid;
+    grid-column: 20px;
+    grid-row: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-items h4 {
+    color: rgb(17, 37, 50);
+    font-size: 1.2rem;
+    padding-top: 50px;
+    border-bottom: 2px solid white;
+}
+
+.project-items h6 ~ p {
+    color: white;
+    align-self: flex-start;
+}
+
+.hidden-menu a {
+    color: rgb(17, 37, 50);
+}
+
+#contact-main {
+    width: 30%;
+    margin: 10rem auto;
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-container {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+#first-contact {
+    grid-column-start: 1;
+}
+
+#second-contact {
+    grid-column-start: 2;
+}
+
+#third-contact {
+    grid-column-start: 3;
 }
